@@ -1,3 +1,3 @@
 class CsvReader:
-    def __init__(self):
-        self.var = 0
+    def __init__(self, csv_file):
+        self.csv_file = csv_file 
