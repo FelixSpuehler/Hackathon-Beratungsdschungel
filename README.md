@@ -17,9 +17,12 @@ Abhilfe schafft der “Beratungslotse”, eine von uns entwickelte Website, die 
 | 1     | Frage     | Herzlich Willkommen!     |  Hast du bereits ein genaues Thema? | Ja | 4 |
 | 1     | Frage     | Herzlich Willkommen!     |  Hast du bereits ein genaues Thema? | Nein | 3 |
 | 2   | ...     | ...     |  ...  | ... | ... |
+
 2. In der Datei src/main.py müssen folgende Variablen angeben werden:
     - csv_file (Name der csv-Datei des Entscheidungsbaumes)
     - project_title (Titel des Projekts, der auf der Website erscheint. Default: "Beratungslotse - Follow Me!")
     - gs_file (Name der Output-Datei)
+    
 3. Anschließend muss das Programm (src/main.py) ausgeführt werden. Dies erstellt eine Datei mit dem Namen <gs_file>.gs
+
 4. Diese Datei muss nun bei Google Apps Script kompiliert werden. Dabei wird ein Google Forms Formular erstellt, welches den Beratungslotsen darstellt. Der Link dazu kann zur Bereitstellung des Beratungslotsen verwendet werden (Einbettung in Websites, Teilen des Linkes).
