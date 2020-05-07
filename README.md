@@ -32,4 +32,4 @@ Abhilfe schafft der “Beratungslotse”, eine von uns entwickelte Website, die 
     
 3. Anschließend muss das Programm (src/main.py) ausgeführt werden. Dies erstellt eine Datei mit dem Namen <gs_file>.gs
 
-4. Diese Datei muss nun bei Google Apps Script kompiliert werden. Dazu auf der Website [Google Script](https://script.google.com) ein neues Projekt anlegen und dort den Inhalt der <gs_file>.gs Datei einfügen. Komilieren dieses Google Apps Scripts erstellt ein Google Forms Formular. Dieses stellt den Beratungslotsen dar und kann dann für Studierende bereitgestellt werden (Einbettung in Websites, Teilen des Linkes).
+4. Diese Datei muss nun bei Google Apps Script kompiliert werden. Dazu auf der Website [Google Script](https://script.google.com) ein neues Projekt anlegen und dort den Inhalt der <gs_file>.gs Datei einfügen. Das Kompilieren dieses Google Apps Scripts erstellt ein Google Forms Formular, welches den Beratungslotsen darstellt. Nun kann der Beratungslotse Studierenden durch die Einbettung in eine Website oder das Versenden des Linkes bereitgestellt werden.
