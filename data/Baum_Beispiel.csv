@@ -1,6 +1,5 @@
 Id;Typ;Titel;Formulierung (Frage / Text);Antwort;ZielId
 1;Frage;Herzlich Willkommen zur Online-Hausarbeitshilfe!;Hast du ein genaues Thema?;Ja;3
 1;Frage;Herzlich Willkommen zur Online-Hausarbeitshilfe!;Hast du ein genaues Thema?;Nein;4
-2;Text;Halt stop!;Hier solltest du nicht sein!;;
 3;Text;You're on a good way!;Prima.;;
 4;Text;You‘re on a bad way!;Schade.;;
