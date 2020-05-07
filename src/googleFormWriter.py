@@ -1,6 +1,8 @@
 from datetime import datetime
 
 from page import Page
+from question import Question
+from text import Text
 
 
 class GoogleFormWriter:
@@ -13,9 +15,12 @@ class GoogleFormWriter:
         var item = "{project_title}";
         var form = FormApp.create(item).setTitle(item);""".format(project_title=project_title)
 
-        text_end = """
+        text_page_end = """
         // end page
-        var endPage = form.addPageBreakItem().setTitle("Bis bald!").setHelpText("Hoffentlich konnte ich dir helfen!").setGoToPage(FormApp.PageNavigationType.SUBMIT);
+        var endPage = form.addPageBreakItem().setTitle("Bis bald!").setHelpText("Hoffentlich konnte ich dir helfen!");"""
+
+        text_end = """
+        endPage.setGoToPage(FormApp.PageNavigationType.SUBMIT);
 }"""
 
         if file_name == "":
@@ -25,7 +30,21 @@ class GoogleFormWriter:
         with open(file_name, "w") as file:
             file.write(text_start)
             for p_id, page in pages_dict.items():
-                file.write(page.create_script_block())
+                file.write(page.create_block_page())
+
+            file.write(text_page_end)
+
+            for p_id, page in pages_dict.items():
+                print(type(page), isinstance(page, Question))
+                if isinstance(page, Question):
+                    file.write(page.create_block_question())
+
+            file.write("")
+
+            for p_id, page in pages_dict.items():
+                print(type(page),isinstance(page, Text))
+                if isinstance(page, Text):
+                    file.write(page.create_block_submit())
 
             file.write(text_end)
 
