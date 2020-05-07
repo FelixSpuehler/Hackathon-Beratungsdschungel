@@ -33,7 +33,7 @@ class Question(Page):
                 script_block += """item.createChoice('{answer}', Page{goto})])""".format(answer=answer, goto=goto)
         # finish code block
         script_block += """.setRequired(true);"""
-        print(script_block)
+        return script_block
 
     def __str__(self):
         return 'Question: {}, {}, {}, {}, {}' .format(self.p_id, self.title, self.formulation, self.answers, self.gotos)

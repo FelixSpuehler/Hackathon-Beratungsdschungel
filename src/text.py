@@ -14,4 +14,8 @@ class Text(Page):
         // Page {p_id}
         var Page{p_id} = form.addPageBreakItem().setTitle("{title}").setHelpText("{formulation}");"""\
             .format(p_id=self.p_id, title=self.title, formulation=self.formulation)
-        print(script_block)
+        return script_block
+
+    def __str__(self):
+        return 'Text: {}, {}, {}' .format(self.p_id, self.title, self.formulation)
+
