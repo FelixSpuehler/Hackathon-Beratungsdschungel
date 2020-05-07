@@ -6,7 +6,7 @@ Id;Typ;Titel;Formulierung (Frage / Text);Antwort;ZielId
 3;Frage;Idee für Thema ;Hast du eine Idee für ein Thema?;nein;6
 4;Frage;Betreuer*in;Hast du einen Betreuer*in und ein genaues Thema?;Ich habe ein*e Betreuer*in und ein Thema;2
 4;Frage;Betreuer*in;Hast du einen Betreuer*in und ein grobes Thema?;Ich habe ein*e Betreuer*in, aber kein Thema;7
-4;Frage;Betreuer*in;Hast du einen Betreuer*in?;Nein;4
+4;Frage;Betreuer*in;Hast du einen Betreuer*in?;Nein;5
 5;Frage;Checkliste, Webseite, ...;Hast du alles erledigt? (Checkliste);Ja;7
 5;Frage;Checkliste, Webseite, ...;Hast du alles erledigt? (Checkliste);Nein;6
 6;Text;Beratung, Terminabfrage, Ticketsystem;Bitte geben Sie mir einen Termin zur Beratung. Oder ein Ticketsystem?;;

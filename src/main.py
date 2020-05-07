@@ -12,7 +12,7 @@ if __name__ == '__main__':
     csv_file = '../data/Baum_Incom.csv'
     # Projekt Titel
     #project_title = "Version_{}".format(datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
-    project_title = "Baum_1800"
+    project_title = "Beratungslotse - Follow Me!"
     # Speicherort der gs-Datei.
     gs_file = "../data/Baum_Incom.gs".format(project_title)
 
