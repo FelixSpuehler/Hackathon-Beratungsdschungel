@@ -1,6 +1,5 @@
 from datetime import datetime
 
-from page import Page
 from question import Question
 from text import Text
 
