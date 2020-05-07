@@ -9,7 +9,6 @@ class GoogleFormWriter:
         print("Writing: Start")
 
         text_start = """function createForm() {{
-        
         // create & name Form
         var item = "{project_title}";
         var form = FormApp.create(item).setTitle(item);""".format(project_title=project_title)
