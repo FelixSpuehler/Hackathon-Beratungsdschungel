@@ -14,8 +14,6 @@ class GoogleFormWriter:
         var form = FormApp.create(item).setTitle(item);""".format(project_title=project_title)
 
         text_end = """
-        // end page
-        var endPage = form.addPageBreakItem().setTitle("Bis bald!").setHelpText("Hoffentlich konnte ich dir helfen!").setGoToPage(FormApp.PageNavigationType.SUBMIT);
 }"""
 
         if file_name == "":
