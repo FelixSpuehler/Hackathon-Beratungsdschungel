@@ -1,5 +1,5 @@
 Id;Typ;Titel;Formulierung (Frage / Text);Antwort;ZielId
-1;Frage;Herzlich Willkommen zur Online-Hausarbeitshilfe!;Hast du ein genaues Thema?;Ja;2
-1;Frage;Herzlich Willkommen zur Online-Hausarbeitshilfe!;Hast du ein genaues Thema?;Nein;3
-2;Text;You're on a good way!;Prima. ;;
-3;Text;You‘re on a bad way!;Schade.;;
+1;Frage;Herzlich Willkommen zur Online-Hausarbeitshilfe!;Hast du ein genaues Thema?;Ja;3
+1;Frage;Herzlich Willkommen zur Online-Hausarbeitshilfe!;Hast du ein genaues Thema?;Nein;4
+3;Text;You're on a good way!;Prima.;;
+4;Text;You‘re on a bad way!;Schade.;;
