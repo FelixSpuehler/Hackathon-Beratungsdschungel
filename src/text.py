@@ -12,7 +12,7 @@ class Text(Page):
         # start page block
         script_block = """
         // Page {p_id}
-        var Page{p_id} = form.addPageBreakItem().setTitle("{title}").setHelpText("{formulation}").setGoToPage(endPage);"""\
+        var Page{p_id} = form.addPageBreakItem().setTitle("{title}").setHelpText("{formulation}").setGoToPage(FormApp.PageNavigationType.GO_TO_PAGE.endPage);"""\
             .format(p_id=self.p_id, title=self.title, formulation=self.formulation)
         return script_block
 
