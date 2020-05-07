@@ -1,4 +1,4 @@
-from src.page import Page
+from page import Page
 
 
 class Question(Page):
