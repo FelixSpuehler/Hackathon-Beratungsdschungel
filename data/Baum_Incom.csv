@@ -10,5 +10,5 @@ Id;Typ;Titel;Formulierung (Frage / Text);Antwort;ZielId
 5;Frage;Checkliste, Webseite, ...;Hast du alles erledigt? (Checkliste);Ja;7
 5;Frage;Checkliste, Webseite, ...;Hast du alles erledigt? (Checkliste);Nein;6
 6;Text;Beratung, Terminabfrage, Ticketsystem;Bitte geben Sie mir einen Termin zur Beratung. Oder ein Ticketsystem?;;
-7;Frage;Genaues Thema;Hast du ein genaues Thema formuliert?;Ja;2
-7;Frage;Genaues Thema;Hast du ein genaues Thema formuliert?;Nein;6
+7;Frage;Genaues Thema;Triff dich mit mit deinem*r Betreuer*in. Konntest du dann ein genaues Thema formulieren?;Ja;2
+7;Frage;Genaues Thema;Triff dich mit mit deinem*r Betreuer*in. Konntest du dann ein genaues Thema formulieren?;Nein;6
