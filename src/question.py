@@ -15,13 +15,13 @@ class Question(Page):
         self.gotos.append(new_goto)
 
     def create_script_block(self):
-        # start page blocl
+        # start page block
         script_block = """
         // Page {p_id}
-        var Page{p_id} = form.addPageBreakItem().setTitle("{p_id}");
-        title = "{title}";
+        var Page{p_id} = form.addPageBreakItem().setTitle("{title}");
+        title = "{formulation}";
         var item = form.addMultipleChoiceItem();  
-        item.setTitle("{formulation}").setChoices([""".format(p_id=self.p_id,
+        item.setTitle(title).setChoices([""".format(p_id=self.p_id,
                                                               title=self.title,
                                                               formulation=self.formulation)
 
@@ -32,7 +32,7 @@ class Question(Page):
             else:
                 script_block += """item.createChoice('{answer}', Page{goto})])""".format(answer=answer, goto=goto)
         # finish code block
-        script_block +=""".setRequired(true);"""
+        script_block += """.setRequired(true);"""
         print(script_block)
 
     def __str__(self):
