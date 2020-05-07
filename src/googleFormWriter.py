@@ -35,14 +35,12 @@ class GoogleFormWriter:
             file.write(text_page_end)
 
             for p_id, page in pages_dict.items():
-                print(type(page), isinstance(page, Question))
                 if isinstance(page, Question):
                     file.write(page.create_block_question())
 
             file.write("")
 
             for p_id, page in pages_dict.items():
-                print(type(page),isinstance(page, Text))
                 if isinstance(page, Text):
                     file.write(page.create_block_submit())
 
