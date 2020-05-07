@@ -1,3 +1,1 @@
 # Hackathon-Beratungsdschungel
-
-Test
