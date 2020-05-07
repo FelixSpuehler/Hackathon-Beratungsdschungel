@@ -1,6 +1,6 @@
 from csvReader import CsvReader
 
-from frage import Frage
+from question import Frage
 from text import Text
 
 if __name__ == '__main__':

@@ -1,9 +1,9 @@
 from abc import ABCMeta, abstractmethod
 
 
-class Abschnitt(metaclass=ABCMeta):
+class Page(metaclass=ABCMeta):
     """ Class for the  """
 
     @abstractmethod
-    def createScriptBlock(self):
+    def create_script_block(self):
         raise NotImplementedError

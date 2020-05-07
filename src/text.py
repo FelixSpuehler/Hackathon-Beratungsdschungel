@@ -1,4 +1,4 @@
-from abschnitt import Abschnitt
+from page import Abschnitt
 
 
 class Text(Abschnitt):
