@@ -9,7 +9,7 @@ Abhilfe schafft der “Beratungslotse”, eine von uns entwickelte Website, die 
 
 
 ## Anleitung zum Erstellen eines GoogleForm-Dokuments
-1. Der Entscheidungsbaum im .csv-Format muss vorliegen. Dazu kann z.B. eine Excel-Tabelle angelegt werden, die die Spalten "ID", "Typ", "Titel", "Frage/Text", "Antwort" und "Ziel-ID" enthält und anschließend als csv-Datei exportiert wird. Ein Beispiel für eine solche Tabelle ist hier aufgeführt und findet sich auch im [GitHub Repository](https://github.com/FelixSpuehler/Hackathon-Beratungsdschungel/data/).
+1. Der Entscheidungsbaum im .csv-Format muss vorliegen. Dazu kann z.B. eine Excel-Tabelle angelegt werden, die die Spalten "ID", "Typ", "Titel", "Frage/Text", "Antwort" und "Ziel-ID" enthält und anschließend als csv-Datei exportiert wird. Ein Beispiel für eine solche Tabelle ist hier aufgeführt und findet sich auch unter [data](https://github.com/FelixSpuehler/Hackathon-Beratungsdschungel/data/).
 
 
 | ID | Typ | Titel | Formulierung (Frage / Text) | Antwort | ZielID
@@ -17,6 +17,12 @@ Abhilfe schafft der “Beratungslotse”, eine von uns entwickelte Website, die 
 | 1     | Frage     | Herzlich Willkommen!     |  Hast du bereits ein genaues Thema? | Ja | 4 |
 | 1     | Frage     | Herzlich Willkommen!     |  Hast du bereits ein genaues Thema? | Nein | 3 |
 | 2   | ...     | ...     |  ...  | ... | ... |
+
+**!** Folgende Bedingungen sollten für die csv-Datei erfüllt sein:
+- Typ sollte nur 'Frage' oder 'Text' enthalten. 
+- Die ZielID von Text-Knoten sollte leer gelassen werden bzw. wird ignoriert, da sie als Endknoten des Entscheidungsbaums betrachtet werden.
+- Formulierung enthält die eigentliche Frage bzw. den Text, der den Nutzern angezeigt werden soll. 
+- Pro Antwort sollte eine Zeile gefüllt werden, um die entsprechende Weiterleitung auf die nächste Seite/Frage zu gewährleisten. 
 
 2. In der Datei src/main.py müssen folgende Variablen angeben werden:
     - csv_file (Name der csv-Datei des Entscheidungsbaumes)
